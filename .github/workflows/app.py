@@ -1,10 +1,12 @@
-from app import add, multiply, greet
+def add(a, b):
+    return a + b
 
-def test_add():
-    assert add(10, 20) == 30
+def multiply(a, b):
+    return a * b
 
-def test_multiply():
-    assert multiply(5, 4) == 20
+def greet(name):
+    return f"Hello, {name}!"
 
-def test_greet():
-    assert greet("Aditi") == "Hello, Aditi!"
+if __name__ == "__main__":
+    print(greet("DevOps Engineer"))
+    print("Addition:", add(10, 20))
